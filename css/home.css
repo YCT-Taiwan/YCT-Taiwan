@@ -153,6 +153,9 @@
                 max-width:100%;
             }
             .mySlides {display:none;}
+            #First_banner{
+                display: inline-block;
+            }
             footer{
                 background-color: #f59342;
                 color:white;
