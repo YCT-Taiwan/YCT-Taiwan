@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href ="css/home.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
@@ -41,16 +42,16 @@
             <a href="index.html"><img id="MainLogo" src ="media/default/Main_logo.png" alt="logo" align="left"/></a><br>
         </div>
         <div style ="width: 100%; background-color:#f59342; padding:0.5vw; display: inline-block;">
-            <img id="menu_icon" onclick="openNav()" src="media/default/Hamburger_icon.svg.png" alt="menu" align="left"/>
+            <img id="menu_icon" onclick="openNav()" src="media/default/Hamburger_icon.png" alt="menu" align="left"/>
             <a href="https://www.facebook.com/%E9%A4%8A%E7%B2%B9%E7%B3%96%E9%A4%8A%E7%94%9F%E9%BB%91%E7%B3%96%E5%A1%8A-757966507615894/" target="_blank" rel="noopener noreferrer"><img id="facebook_icon" src="media/default/Facebook_icon.png" alt="facebook" align="right"/></a>
             <a class="header_links" href="YCT.html"> 養粹糖</a>
             <a class="header_links" href="contact_us.html"> 聯絡我們</a>
         </div>
         <br>
         <div class="w3-content w3-display-container" >
-            <img class="mySlides w3-animate-fading" src="media/default/banner/01.jpg" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="media/default/banner/02.jpg" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="media/default/banner/03.jpg" style="width:100%">
+            <img id ="First_Banner"class="mySlides " src="media/default/banner/01.jpg" style="width:100%">
+            <img class="mySlides " src="media/default/banner/02.jpg" style="width:100%">
+            <img class="mySlides " src="media/default/banner/03.jpg" style="width:100%">
           
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -108,6 +109,14 @@
             (function() {
                 while( $('#Copyright div').height() > $('#Copyright').height() ) {
                     $('#Copyright div').css('font-size', (parseInt($('#Copyright div').css('font-size')) - 1) + "px" );
+                }
+            });
+
+            $(document).ready(function() {
+                var elements = document.getElementsByClassName("mySlides");
+                for(var x=0; x < elements.length; x++)
+                {
+                    elements[x].classList.add("w3-animate-fading");
                 }
             });
 
