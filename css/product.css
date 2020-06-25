@@ -1,0 +1,160 @@
+
+        * {
+            -webkit-overflow-scrolling: touch;
+        }
+        a {
+            text-decoration: none;
+        }
+        .header_links{
+            font-size:calc(0.9em + 0.7vw); 
+            color:white; 
+            /* border:3px inset #AAAAAA; */
+            margin:0.2vw;
+            vertical-align: middle;
+
+        }
+        .header_links:hover{
+            color:black;
+            text-decoration: none;
+            background-color:darkgrey;
+
+        }
+        @media (min-width: 701){
+            html, body {
+                margin:0; 
+                padding:0; 
+                width:100%; 
+                height:100%; 
+                overflow:auto;
+                overflow-x: initial;
+                max-height: 100% !important;
+            }
+            #container_div{
+                height:100vh;
+
+            }
+            
+        }
+        @media (max-width: 700px){
+            html, body {
+                margin:0; 
+                padding:0; 
+            }
+            #MainLogo{
+                width:auto;
+                height: 70px;
+            }
+            #facebook_icon{
+                width:auto;
+                height:30px;
+                padding-top:1vh;
+            }
+            footer div{
+                text-align: center;
+                align-content: center;
+                overflow: hidden;
+                font-size: 0.7em;
+            }
+            
+        }
+        body {
+            text-align: center;
+            /* background: url("media/default/main-background.png"); */
+            /* background-repeat:no-repeat; */
+            /* background-size: 100% 100%; */
+            background-color: white;
+            margin:auto;
+            }
+        .col-lg-3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #center{
+            margin:auto;
+            margin-top:0;
+
+            
+        }
+        @-ms-viewport{
+            width: device-width;
+            height:device-height
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            }
+        .sidenav p {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+            cursor: pointer;
+            }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+        .backbtn{
+            position: absolute;
+            top: 0.5vw;
+            left: 0.5vw;
+            font-size: 36px;
+            margin-right: 50px;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+        #menu_icon:hover{
+            cursor: pointer;
+
+        }
+        #facebook_icon{
+            padding-right: 1vw;
+        }
+        #facebook_icon:hover{
+            cursor: pointer;
+
+        }
+        #banners_images{
+            height:100%;
+            width:100%
+        }
+        .single_banner{
+            max-width:100%;
+        }
+        .mySlides {display:none;}
+        footer{
+            background-color: #f59342;
+            color:white;
+        }
+        .fullpic{
+            overflow-y: visible;
+        }
